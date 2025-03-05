@@ -72,7 +72,10 @@ a {
 .display-2 {
 	font-size: 2.2rem;
 	font-weight: 300;
+	
 }
+
+
 
 .btn {
 	display: inline-block;
@@ -162,6 +165,7 @@ a {
 	margin-top: 10px; 
 	margin-bottom: 10px;
 	box-shadow: 0px 0px 10px white;
+	object-position: center;
 
 
 }
@@ -206,6 +210,7 @@ a {
 	margin-top: 50px;
 	object-fit: cover;
 	transform: scale(1.2);
+	
 }
 
 /* About */
@@ -217,7 +222,7 @@ a {
 
 .C-2 {
 	margin-top: -25px;
-	height: 350px; 
+	height: 380px; 
 	 
 }
 
@@ -251,6 +256,12 @@ a {
     justify-content: center; 
     align-items: center; 
 	justify-content: space-around;
+	
+}
+
+#portfolio div {
+    margin-top: -40px;
+	margin-bottom: 40px; 
 }
 
 
@@ -258,29 +269,58 @@ a {
 	
 	height: 250px;
 	
+	opacity: 1.4;
   
 }
+#portfolio  {
+    transition: opacity 0.3s ease;
+}
+
+#portfolio:hover {
+    opacity: 0.9;
+}
+
 
 /* Social */
 #social .social-flex {
 	display: flex;
 }
 
+/*Habilidades */
+.Habilidades {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; /
+}
 
+.Habilidades img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain; 
+    margin: 10px; 
+}
 
-
+@media (max-width: 768px) { 
+    .Habilidades img {
+        width: 80px; 
+        height: 80px;
+    }
+}
 
 
 /* Footer */
  #mainfooter {
 	background: #050508;
 	padding: 30px;
+
 } 
 
 .logo_redes {
 display: flex;
 justify-content: center;
 align-items: center;
+
 
 margin: 10px;
 width: 70px;
@@ -359,10 +399,13 @@ transition: color 0.3s ease;
   }
 
 .enlaces__icono  {
-width: 45px;
+width: 2.5rem;
 aspect-ratio: 1;
 filter: drop-shadow(0px 0px 2px rgb(219, 207, 207) );
 border-radius: 50%;
+height: 2.5rem;
+margin-left: -20px;
+
 }
 
 .enlaces__icono:hover,
