@@ -437,3 +437,15 @@ filter: drop-shadow(0px 0px 4px rgb(219, 207, 207) );
         height: auto; /* Permite que el footer se ajuste al contenido */
     }
 }
+
+/* Navbar */
+@media (max-width: 767px) {
+    #navbar .container {
+        padding: 0 15px; /* Reduce el padding lateral */
+    }
+
+    #navbar .logo img {
+        width: 70px; /* Reduce el ancho del logo */
+        height: 70px; /* Reduce la altura del logo */
+    }
+}
