@@ -426,3 +426,14 @@ filter: drop-shadow(0px 0px 4px rgb(219, 207, 207) );
      
 }
 
+/* Media querys */
+@media (max-width: 767px) {
+    #mainfooter {
+        padding-bottom: 50px; /* Aumenta el padding inferior */
+        padding-top: 50px; /* Aumenta el padding superior */
+    }
+
+    .pie_de_pagina {
+        height: auto; /* Permite que el footer se ajuste al contenido */
+    }
+}
