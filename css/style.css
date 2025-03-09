@@ -210,18 +210,7 @@ a {
 	transform: scale(1.2);
 	
 }
-@media (max-width: 767px) {
-    #showcase img {
-        height: 280px;
-        width: 280px;
-        transform: none; 
-        margin-top: 20px; 
-    }
-	#showcase {
-		
-        margin-bottom: 150px; 
-    }
-}
+
 /* About */
 
 #about {
@@ -248,24 +237,6 @@ a {
 
 
 }
-@media (max-width: 767px) {
-    #about {
-        padding-top: 50px; 
-		margin-top: 220px;
-    }
-
-    .C-2 {
-        height: auto; 
-        margin-top: 0; 
-    }
-
-    #about img {
-        height: auto; 
-        width: 100%; 
-        transform: none; 
-        margin-top: 20px;
-    }
-}
 
 /* Extract */
 #extract img {
@@ -275,15 +246,6 @@ a {
 #extract .txt-large {
 	text-transform: uppercase;
 	font-weight: 500;
-}
-@media (max-width: 767px) {
-    #extract {
-        padding: 30px 0; 
-    }
-
-    #extract .txt-large {
-        font-size: 1.2rem; 
-    }
 }
 
 /* Portfolio */
@@ -316,21 +278,6 @@ a {
 #portfolio:hover {
     opacity: 0.9;
 }
-@media (max-width: 767px) {
-    #portfolio {
-        flex-direction: column; 
-    }
-
-    #portfolio div {
-        margin-top: 0; 
-        margin-bottom: 20px;
-    }
-
-    #portfolio img {
-        height: auto; 
-        width: 100%; 
-    }
-}
 
 /* Social */
 #social .social-flex {
@@ -350,13 +297,6 @@ a {
     height: 100px; 
     object-fit: contain; 
     margin: 10px; 
-}
-
-@media (max-width: 768px) { 
-    .Habilidades img {
-        width: 80px; 
-        height: 80px;
-    }
 }
 
 
@@ -479,67 +419,96 @@ filter: drop-shadow(0px 0px 4px rgb(219, 207, 207) );
 
 /* Media querys */
 @media (max-width: 767px) {
+    #showcase img {
+        height: 280px;
+        width: 280px;
+        transform: none;
+        margin-top: 20px;
+    }
+    #showcase {
+        margin-bottom: 150px;
+    }
+    #about {
+        padding-top: 50px;
+        margin-top: 220px;
+    }
+    #about img {
+        height: auto;
+        width: 100%;
+        transform: none;
+        margin-top: 20px;
+    }
+    .C-2 {
+        height: auto;
+        margin-top: 0;
+    }
+    #extract {
+        padding: 30px 0;
+    }
+    #extract .txt-large {
+        font-size: 1.2rem;
+    }
+    #portfolio {
+        flex-direction: column;
+    }
+    #portfolio div {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    #portfolio img {
+        height: auto;
+        width: 100%;
+    }
     #mainfooter {
-        padding-bottom: 50px; 
-        padding-top: 50px; 
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
-
     .pie_de_pagina {
-        height: auto; 
+        height: auto;
     }
-}
-
-/* Navbar */
-@media (max-width: 767px) {
     #navbar .container {
-        padding: 0 15px; 
+        padding: 0 15px;
     }
-
     #navbar .logo img {
-		display: none;
+        display: none;
     }
-	#navbar ul {
-        display: flex; 
-        justify-content: space-around; 
-        width: 100%; 
+    #navbar ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
         text-align: center;
         background-color: #050508;
     }
-
     #navbar ul li {
-        width: auto; 
+        width: auto;
         margin: 0;
     }
-
     #navbar ul li a {
         display: block;
-        padding: 15px 10px; 
+        padding: 15px 10px;
         color: #fff;
     }
-}
-@media (max-width: 767px) {
-
     .flex {
-        flex-direction: column; 
+        flex-direction: column;
     }
-
     .flex-box {
-        width: 100%; 
-		margin-top: 20px;
+        width: 100%;
+        margin-top: 20px;
     }
-	
-	.flex-box img {
-        max-width: 80%; 
-        height: auto; 
-        display: block; /
-        margin: 0 auto; 
-		border-radius: 50%;
-		
-    }	
-	
-
-    .flex-box:first-child { 
-        order: -1; 
+    .flex-box img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
     }
-
+    .flex-box:first-child {
+        order: -1;
+    }
+}
+@media (max-width: 768px) {
+    .Habilidades img {
+        width: 80px;
+        height: 80px;
+    }
 }
